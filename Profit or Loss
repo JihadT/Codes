@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+{
+	int PPrice, SPrice, Profit, Loss;
+	cout << "Enter the purchase price(AED): ";
+	cin >> PPrice;
+	cout << "Enter the sales price(AED): ";
+	cin >> SPrice;
+
+	if (PPrice - SPrice < 0)
+	{
+		Profit = SPrice - PPrice;
+		cout << "You have profited a total of " << Profit << " AED" << endl;
+	}
+	else if (PPrice - SPrice > 0)
+	{
+		Loss = PPrice - SPrice;
+		cout << "You have lost a total of " << Loss << " AED" << endl;
+	}
+	else
+	{
+		cout << "You have made no profit and lost no money" << endl;
+	}
+}
+	cin.get();
+	return 0;
+}
