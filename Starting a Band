@@ -1,0 +1,40 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+	{
+		bool musicalFriend = true;
+		cout << "Do you play an instrument? (yay/nay): ";
+		string x, y;
+		cin >> x;
+
+		string FI1 = "guitar";
+		string FI2 = "drums";
+
+		if (musicalFriend = true)
+		{
+			if (x == "yay")
+			{
+				cout << "Nice!! I need someone who plays the guitar or the drums. DO you play one of them? (guitar/drums):\n";
+				cin >> y;
+
+				if (y == FI1)
+				{
+					cout << "Alright! You can join the band I can get started on the sticks and you get started on the string\n";
+				}
+				if (y == FI2)
+				{
+					cout << "Alright! You can join the band I can get started on the strings and you get started on the sticks\n";
+				}
+			}
+			else
+				cout << "Sorry I am currently looking for someone to join my band";
+		}
+
+
+	}
+	cin.get();
+	return 0;
+}
