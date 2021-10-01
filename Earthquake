@@ -1,0 +1,50 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	{
+		float mag;
+		cout << "Enter the earthquake magnitude to determine how strong the earthquake was: ";
+		cin >> mag;
+
+		if (mag >= 10)
+		{
+			cout << "Meteoric Earthquake";
+		}
+		else if (mag >= 8.0)
+		{
+			cout << "Great Earthquake";
+		}
+		else if (mag >= 7.0)
+		{
+			cout << "Major Earthquake";
+		}
+		else if (mag >= 6.0)
+		{
+			cout << "Strong Earthquake";
+		}
+		else if (mag >= 5.0)
+		{
+			cout << "Moderate Earthquake";
+		}
+		else if (mag >= 4.0)
+		{
+			cout << "Light Earthquake";
+		}
+		else if (mag >= 3.0)
+		{
+			cout << "Minor Earthquake";
+		}
+		else if (mag >= 2.0)
+		{
+			cout << "Very Minor Earthquake";
+		}
+		else if (mag <= 1.9)
+		{
+			cout << "Micro Earthquake";
+		}
+	}
+	cin.get();
+	return 0;
+}
