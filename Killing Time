@@ -1,0 +1,40 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	{
+		string latefriend, money;
+		cout << "You are killing time in the Dubai Mall , waiting for your friend who is always late.\nYou receive a text telling you how late they're going to be\n";
+		cout << "*you checked your phone for the message* Is your friend late or not? (y/n): ";
+		cin >> latefriend;
+
+		if (latefriend == "y")
+		{
+			cout << "Your friend is going to be late so you decided to check you wallet to see if you have money for coffee. \nDo you have 5 AED or more? y/n: ";
+			cin >> money;
+			if (money == "y")
+			{
+				cout << "So, you have got enough money. You then went to Starbucks and bought a coffee while you wait for your late friend.";
+			}
+			else if (money == "n")
+			{
+				cout << "So, you don't have enough for a coffee. You then go for a long walk around the city mall.";
+			}
+			else
+			{
+				cout << "Input the required answer to continue the story.";
+			}
+		}
+		else if (latefriend == "n")
+		{
+			cout << "Your friend decided to go agaisnt the matrix and be early for once so then you decided to find the nearest food zone and wait for him there.";
+		}
+		else
+		{
+			cout << "Input the required answer to continue the story.";
+		}
+	}
+	cin.get();
+	return 0;
+}
