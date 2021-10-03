@@ -6,31 +6,43 @@ int main()
 {
 	{
 		bool musicalFriend = true;
-		cout << "Do you play an instrument? (yay/nay): ";
+		cout << "Do you play an instrument? (y/n): ";
 		string x, y;
 		cin >> x;
 
 		string FI1 = "guitar";
-		string FI2 = "drums";
+		string FI2 = "Guitar";
+		string FI3 = "drums";
+		string FI4 = "Drums";
 
 		if (musicalFriend = true)
 		{
-			if (x == "yay")
+			if (x == "y" || x == "Y")
 			{
-				cout << "Nice!! I need someone who plays the guitar or the drums. DO you play one of them? (guitar/drums):\n";
+				cout << "Nice!! I need someone who plays the guitar or the drums. Do you play one of them? (guitar/drums):\n";
 				cin >> y;
 
-				if (y == FI1)
+				if (y == FI1 || y == FI2)
 				{
-					cout << "Alright! You can join the band I can get started on the sticks and you get started on the string\n";
+					cout << "Alright! You can join the band I can get started on the sticks and you get started on the strings\n";
 				}
-				if (y == FI2)
+				if (y == FI3 || y == FI4)
 				{
 					cout << "Alright! You can join the band I can get started on the strings and you get started on the sticks\n";
 				}
+				else
+				{
+					cout << "Ohh I see, but sorry I just need someone who plays either the drums or guitar.";
+				}
+			}
+			else if (x == "n" || x == "N")
+			{
+				cout << "Sorry I am currently looking for someone who plays an instrument to join my band";
 			}
 			else
-				cout << "Sorry I am currently looking for someone to join my band";
+			{
+				cout << "Huh..? Is it a yes or a no?";
+			}
 		}
 
 
