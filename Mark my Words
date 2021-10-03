@@ -5,7 +5,7 @@ int main()
 {
 	{
 		int grade;
-		cout << "Input a grade: ";
+		cout << "You are grading a test paper. Input their marks to determine the grade: ";
 		cin >> grade;
 
 		if (grade >= 70)
