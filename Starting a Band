@@ -44,8 +44,6 @@ int main()
 				cout << "Huh..? Is it a yes or a no?";
 			}
 		}
-
-
 	}
 	cin.get();
 	return 0;
