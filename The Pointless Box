@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	cout << "What number do you like 1 or 2?" << endl;
+	int useless;
+	cin >> useless;
+
+	while (useless <= 2)
+	{
+		if (useless == 1)
+		{
+			cout << "You have entered the number 1" << endl;
+		}
+		else if (useless == 2)
+		{
+			cout << "You have entered the number 2" << endl;
+		}
+		else
+		{
+			cout << "I asked to pick 1 or 2 don't go to the negatives" << endl;
+		}
+		cout << "What number do you like 1 or 2?" << endl;
+		cin >> useless;
+	}
+	cout << "I asked to pick 1 or 2!??!?!";
+}
