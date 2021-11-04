@@ -1,0 +1,62 @@
+#include <iostream>
+using namespace std;
+int main() {
+	cout << "What score did you get on Math? (0-100)" << endl;
+	int math;
+	cin >> math;
+	cout << "What score did you get on Science? (0-100)" << endl;
+	int science;
+	cin >> science;
+
+	if (math >= 0 && math <= 100 && science >= 0 && science <= 100)
+	{
+		cout << "Would you like to know your average and grade? (Y/N)" << endl;
+		char input;
+		cin >> input;
+		switch (input)
+		{
+		case 'Y':
+		case 'y':
+			double sum;
+			double ave;
+			sum = math + science;
+			ave = sum / 2;
+			if (ave >= 70 && ave <= 100)
+			{
+				cout << "Your average score is: " << ave << endl;
+				cout << "And your grade is: A" << endl;
+			}
+			else if (ave >= 60 && ave <= 69)
+			{
+				cout << "Your average score is: " << ave << endl;
+				cout << "And your grade is: B" << endl;
+			}
+			else if (ave >= 50 && ave <= 59)
+			{
+				cout << "Your average score is: " << ave << endl;
+				cout << "And your grade is: C" << endl;
+			}
+			else if (ave >= 40 && ave <= 49)
+			{
+				cout << "Your average score is: " << ave << endl;
+				cout << "And your grade is: D" << endl;
+			}
+			else if (ave <= 39)
+			{
+				cout << "Your average score is: " << ave << endl;
+				cout << "And your grade is: F" << endl;
+			}
+			break;
+		case 'N':
+		case 'n':
+			cout << "Then here are just both of your grades (Math: " << math << ") (Science: " << science << ")" << endl;
+			break;
+		default:
+			cout << "Invalid Input Detected" << endl;
+		}
+	}
+	else
+	{
+		cout << "Incorrect Values Detected" << endl;
+	}
+}
