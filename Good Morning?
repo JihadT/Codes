@@ -1,0 +1,29 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	cout << "Enter an hour of the day using military time to check if it is Morning, Afternoon, Evening, or Night\n";
+	int time;
+	cin >> time;
+
+	if (time >= 0 && time < 12)
+	{
+		cout << "Good Morning.. Sir/Maam";
+	}
+	else if (time >= 12 && time < 18)
+	{
+		cout << "Good Afternoon.. Sir/Maam";
+	}
+	else if (time >= 18 && time < 21)
+	{
+		cout << "Good Evening.. Sir/Maam";
+	}
+	else if (time >= 21 && time < 24)
+	{
+		cout << "Good Night.. Sir/Maam";
+	}
+	else
+	{
+		cout << "Incorrect input";
+	}
+}
