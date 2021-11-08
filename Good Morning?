@@ -1,0 +1,21 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	cout << "Enter an hour of the day using military time to check if it is AM or PM\n";
+	int time;
+	cin >> time;
+
+	if (time >= 0 && time < 12)
+	{
+		cout << "It is AM";
+	}
+	else if (time >= 12 && time < 24)
+	{
+		cout << "It is PM";
+	}
+	else
+	{
+		cout << "Incorrect input";
+	}
+}
