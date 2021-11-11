@@ -1,0 +1,38 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	cout << "----Counts up from 0 to 50 in increments of 1----" << endl;
+	for (int a = 0; a <= 50; a++)
+	{
+		cout << a << endl;
+	}
+	cout << endl;
+	
+	cout << "----Counts down from 50 to 0 in decrements of 1----" << endl;
+	for (int b = 50; b >= 0; b--)
+	{
+		cout << b << endl;
+	}
+	cout << endl;
+
+	cout << "----Counts up from 30 to 50 in increments of 1----" << endl;
+	for (int c = 30; c <= 50; c++)
+	{
+		cout << c << endl;
+	}
+	cout << endl;
+
+	cout << "----Counts down from 50 to 10 in decrements of 2----" << endl;
+	for (int d = 50; d >= 10; d -= 2)
+	{
+		cout << d << endl;
+	}
+	cout << endl;
+
+	cout << "----Counts up from 100 to 200 in increments of 5----" << endl;
+	for (int e = 100; e <= 200; e += 5)
+	{
+		cout << e << endl;
+	}
+}
