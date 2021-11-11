@@ -1,0 +1,7 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	for (int e = 100; e <= 200; e += 5)
+		cout << e << endl;
+}
