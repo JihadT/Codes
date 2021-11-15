@@ -1,0 +1,15 @@
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+{
+	double r, a, c;
+	cout << "You are trying to find the Area and the Circumference of a circle.\nInput the value of the radius:  " << endl;
+	cin >> r;
+	
+	a = 3.14 * r * r;
+	c = 2 * 3.14 * r;
+
+	cout << "The Area of the circle with your given radius is: " << a << endl;
+	cout << "The Circumference of the circle with your given radius is : " << c << endl;
+}
