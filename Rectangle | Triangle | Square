@@ -1,0 +1,19 @@
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+{
+	double l, w, rect, trian, square;
+	cout << "You are trying to find the Area of a rectangle, a triangle, and a square with a singular input of lenght and width.\nInput the value of the length: " << endl;
+	cin >> l;
+	cout << "Now input the value of the width:" << endl;
+	cin >> w;
+	
+	rect = l * w;
+	trian = (l * w) * 0.5;
+	square = l * l;
+
+	cout << "The Area of the rectangle with your given lenght and width is: " << rect << endl;
+	cout << "The Area of the triangle with your given lenght and width is: " << trian << endl;
+	cout << "The Area of the square with your given lenght and width is: " << square << endl;
+}
