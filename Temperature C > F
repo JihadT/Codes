@@ -1,0 +1,12 @@
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+{
+	double c, f;
+	cout << "Input you desired Celsius to be converted to Fahrenheit: " << endl;
+	cin >> c;
+
+	f = (c * 1.8) + 32;
+	cout << c << " Celsius is : " << f << " in Fahrenheit";
+}
