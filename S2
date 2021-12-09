@@ -1,0 +1,49 @@
+#include <iostream>
+#include <array>
+#include <string>
+using namespace std;
+int main()
+{
+	string fullname;
+	cout << "Enter your full name: ";
+	getline(cin, fullname);
+
+	cout << "Hello " << fullname << " please input a number of your choice: ";
+	int i, p, x, y{}, z;
+	cin >> x;
+	int fact = 1;
+
+	while (cin.fail()) {
+		cout << "Invalid input.\nPlease enter a number: ";
+		cin.clear();
+		cin.ignore(1000, '\n');
+		cin >> x;
+	}
+
+	for (int y = x; y > 0; y--)
+	{
+		fact = y * fact;
+	}
+	cout << "\n\n||||||FACTORIAL||||||\n\n";
+	cout << "The factorial is: " << fact;
+
+	cout << "\n\n||||||MULTILICATION-TABLE||||||\n\n";
+
+	i = 1;
+	while (i <= 10)
+	{
+		z = x * i;
+		cout << x << " x " << i << " = " << z << endl;
+		i++;
+	}
+
+	cout << "\n||||||POWER-TABLE||||||\n\n";
+
+	p = 1;
+
+	do
+	{
+		cout << x << " to the power of " << p << " = " << pow(x, p) << endl;
+		p++;
+	} while (p <= 10);
+}
