@@ -1,0 +1,22 @@
+#include <iostream>
+#include <array>
+#include <algorithm>
+using namespace std;
+int main()
+{
+	int randomArry[1000];
+	for (int i = 0; i < 1000; i++)
+	{
+		randomArry[i] = rand() % 100 + 1;
+		cout << randomArry[i] << endl;
+	}
+	int counter = 0;
+	for (int i = 0; i < 1000; i++)
+	{
+		if (randomArry[i] == 6)
+		{
+			counter++;
+		}
+	}
+	cout << "Number 6 appeared " << counter << " times.";
+}
