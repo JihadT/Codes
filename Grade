@@ -1,0 +1,64 @@
+#include <iostream>
+#include <exception>
+#include <string>
+
+using namespace std;
+int main()
+{
+    cout << "Enter your full name:" << endl;
+    string name;
+    getline(cin, name);
+
+    cout << "\nEnter The Marks Between 0 To 100 to check your grade: ";
+    cout << "\nEnter The Mark: ";
+    int marks;
+    std::cin >> marks;
+
+    if (std::cin.fail())
+    {
+        std::cin.clear();
+        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+        std::cout << "Incorrect Command\n: ";
+    }
+    else if (marks > 100)
+    {
+        cout << "\nPlease enter your scores in between the limits.\n";
+    }
+    else
+    {
+        switch (marks / 10)
+        {
+        case 10:
+        case 9:
+        case 8:
+        {
+            cout << name << " Your Grade Is: A Excellent";
+            break;
+        }
+        case 7:
+        {
+            cout << name << " Your Grade Is: B Well Done";
+            break;
+        }
+        case 6:
+        {
+            cout << name << " Your Grade Is: C Fair";
+            break;
+        }
+        case 5:
+        {
+            cout << name << " Your Grade Is: D Needs more practice";
+            break;
+        }
+        case 4:
+        {
+            cout << name << " Your Grade Is: E Needs a lot more practice";
+            break;
+        }
+        default:
+        {
+            cout << name << " You Grade Is: F for Failure\n";
+        }
+        }
+    }
+}
