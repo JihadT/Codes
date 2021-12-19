@@ -1,0 +1,83 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+
+	cout << "Pick a number for the month you want to see the days of:\n";
+
+	cout << " 1. January\n 2. February\n 3. March\n 4. April\n 5. May \n 6. June \n 7. July \n 8. August\n 9. September\n 10. October\n 11. November\n 12. December\n";
+	int a;
+	cin >> a;
+
+
+	switch (a)
+	{
+	case 1:
+	{
+		cout << "January have days 31";
+		break;
+	}
+	case 2:
+	{
+		cout << "February have days 28 if there is a leap year than 29";
+		break;
+	}
+	case 3:
+	{
+		cout << "March have days 31";
+		break;
+	}
+	case 4:
+	{
+		cout << "April have days 30";
+		break;
+	}
+	case 5:
+	{
+		cout << "May have days 31";
+		break;
+	}
+	case 6:
+	{
+		cout << "June have days 30";
+		break;
+	}
+	case 7:
+	{
+		cout << "July have days 31";
+		break;
+	}
+	case 8:
+	{
+		cout << "August have days 31";
+		break;
+	}
+	case 9:
+	{
+		cout << "September have days 30 ";
+		break;
+	}
+	case 10:
+	{
+		cout << "October have days 31";
+		break;
+	}
+	case 11:
+	{
+		cout << "November have days 30";
+		break;
+	}
+	case 12:
+	{
+		cout << "December have days 31";
+		break;
+	}
+
+	default:
+	{
+		cout << "Invalid Input" << endl;
+		break;
+	}
+	}
+
+}
