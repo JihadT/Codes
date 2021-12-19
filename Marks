@@ -1,0 +1,27 @@
+#include <array>
+#include <string>
+#include <algorithm>
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    cout << "Hello Student!\nEnter your scores for five different subjects.";
+    int marks[5];
+    int sum = 0;
+    for (int i = 0; i < 5; i++)
+    {
+        cout << "\nInput your scores: " << endl;
+        cin >> marks[i];
+
+        while (cin.fail() || marks[i] > 100 || marks[i] < 0) 
+        {
+            cout << "invalid command, enter the marks again\n";
+            cin.clear();
+            cin.ignore();
+            cin >> marks[i];
+        }
+        sum = sum + marks[i];
+    }
+    cout << "\nYour average is: " << sum / 5 << endl;
+}
