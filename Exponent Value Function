@@ -3,10 +3,14 @@
 #include <math.h>
 using namespace std;
 
-int myPower(int x)
+string	myPower(int x)
 {
 	x *= 1;
-	return x;
+	for (int y = 1; y <= 10; y++)
+	{
+		cout << x << " to the power of " << y << " is " << pow(x, y) << endl;
+	}
+	return "|||Exponent Levels|||";
 }
 
 int main()
@@ -21,9 +25,6 @@ int main()
 		cin.ignore(1000, '\n');
 		cin >> x;
 	}
-	for (int y = 1; y <= 10; y++)
-	{
-		cout << x << " to the power of " << y << " is " << pow(x, y) << endl;
-	}
+	cout << myPower(x) << endl;
 	return 0;
 }
