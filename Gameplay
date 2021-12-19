@@ -1,0 +1,35 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+
+	cout << "GAME OVER. Would you like to continue? (Y/N): ";
+	char choice;
+	cin >> choice;
+
+	switch (choice)
+	{
+
+	case 'Y':
+	case 'y':
+	{
+		cout << "Continuing the level...";
+		break;
+	}
+
+	case 'N':
+	case 'n':
+	{
+		cout << "Exiting the Game...";
+		break;
+	}
+
+	default:
+	{
+		cout << "Incorrect Input";
+	}
+
+	}
+	cin.get();
+	return 0;
+}
