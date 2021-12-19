@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    cout << "What is the capital of France? ";
+    string cap;
+    cin >> cap;
+
+    if (cap == "Paris" || cap == "paris" || cap == "PARIS")
+    {
+        cout << "You entered the correct answer!!";
+    }
+    else
+    {
+        cout << "Sorry wrong answer..";
+    }
+
+    return 0;
+}
