@@ -1,0 +1,30 @@
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+{
+	int x;
+	cout << "Input a desired number to show its times table: " << endl;
+	cin >> x;
+	while (cin.fail())
+	{
+		cout << "Invalid Input Please Try Again: " << endl;
+		cin.clear();
+		cin.ignore(1000, '\n');
+		cin >> x;
+	}
+	int y;
+	cout << "Input a number for the limit of the times table: " << endl;
+	cin >> y;
+	while (cin.fail())
+	{
+		cout << "Invalid Input Please Try Again: " << endl;
+		cin.clear();
+		cin.ignore(1000, '\n');
+		cin >> y;
+	}
+	for (int z = 0; z <= y; z++)
+	{
+		cout << x << " x " << z << " = " << x * z << endl;
+	}
+}
