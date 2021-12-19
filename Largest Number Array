@@ -15,7 +15,7 @@ int main()
 		if (x[0] < x[i])
 			x[0] = x[i];
 	}
-	cout << "Smallest number = " << x[0];
+	cout << "Largest Number = " << x[0];
 
 	return 0;
 }
