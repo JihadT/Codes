@@ -1,0 +1,21 @@
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+{
+	int x, y, z = 0;
+	cout << "Input a desired number to show its times table and then input another number for the limit of the times table: " << endl;
+	cin >> x >> y;
+	while (cin.fail())
+	{
+		cout << "Invalid command enter the numbers again: " << endl;
+		cin.clear();
+		cin.ignore(1000, '\n');
+		cin >> x >> y;
+	}
+	while (z <= y)
+	{
+		cout << x << " x " << z << " = " << x * z << endl;
+		z++;
+	}
+}
