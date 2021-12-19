@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	string password = "XI";
+	string userInput;
+	int x = 5;
+	cout << "You will only have 5 attempts" << endl;
+
+	while (x > 0)
+	{
+		cout << "Enter the password" << endl;
+		cin >> userInput;
+		if (userInput == password)
+		{
+			cout << "You have unlocked the safe" << endl;
+			break;
+		}
+		else
+			x--;
+	}
+	if (x == 0)
+	{
+		cout << "No more attempts" << endl;
+	}
+}
