@@ -1,0 +1,22 @@
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+{
+	int y, x = 0;
+	cout << "Input a desired number to show its times table up to times 10: " << endl;
+	cin >> y;
+	while (cin.fail())
+	{
+		cout << "Invalid Input Please Try Again: " << endl;
+		cin.clear();
+		cin.ignore(1000, '\n');
+		cin >> y;
+	}
+	while (x <= 10)
+	{
+		cout << y << " x " << x << " = " << y * x << endl;
+		x++;
+	}
+
+}
