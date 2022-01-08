@@ -21,7 +21,7 @@ void table(int y)
         cout << y << " * " << i << " = " << y * i << endl;
         pro = y * i;
         {
-            if (pro > 0)
+            if (pro >= 0)
                 pos++;
             else if (pro < 0)
                 neg++;
