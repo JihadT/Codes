@@ -16,7 +16,7 @@ double fact(int y)
 void table(int y)
 {
     int i, pos = 0, neg = 0, pro;
-    for (i = -5; i <= 15; i++) 
+    for (i = -5; i <= 10; i++) 
     {
         cout << y << " * " << i << " = " << y * i << endl;
         pro = y * i;
