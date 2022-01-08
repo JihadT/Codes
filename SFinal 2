@@ -1,0 +1,53 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+double fact(int y) 
+{
+    double factorial = 1.0;
+    for (int i = 1; i <= y; i++) 
+    {
+        factorial *= i;
+    }
+    cout << "Factorial of " << y << " = ";
+    return factorial;
+}
+
+void table(int y)
+{
+    int i, pos = 0, neg = 0, pro;
+    for (i = -5; i <= 15; i++) 
+    {
+        cout << y << " * " << i << " = " << y * i << endl;
+        pro = y * i;
+        {
+            if (pro > 0)
+                pos++;
+            else if (pro < 0)
+                neg++;
+        }
+    }
+    cout << "\nFrequency of Positive Numbers: " << pos;
+    cout << "\nFrequency of Negative Numbers: " << neg;
+    cout << endl;
+}
+
+int main()
+{
+    cout << "Enter your full name: " << endl;
+    string fullName;
+    getline(cin, fullName);
+    
+    cout << fullName << ", Input a number from 1-10: " << endl;
+    int x;
+    cin >> x;
+    while (x < 1 && x > 10)
+    {
+        cout << "Please input the proper values.(Y/N)";
+        cin.clear();
+        cin.ignore(1000, '\n');
+        cin >> x;
+    }
+    cout << fact(x) << endl;
+    table(x);
+}
