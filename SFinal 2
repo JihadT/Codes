@@ -41,9 +41,9 @@ int main()
     cout << fullName << ", Input a number from 1-10: " << endl;
     int x;
     cin >> x;
-    while (x < 1 && x > 10)
+    while (x < 1 || x > 10)
     {
-        cout << "Please input the proper values.(Y/N)";
+        cout << "Please input the proper values. (1-10): ";
         cin.clear();
         cin.ignore(1000, '\n');
         cin >> x;
